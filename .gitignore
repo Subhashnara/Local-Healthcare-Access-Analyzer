@@ -1,0 +1,18 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Environment variables file - VERY IMPORTANT
+.env
+
+# Data and output files - Do not commit data to the repository
+*.csv
+*.db
+*.html
+tl_2022_us_county/
+
+# IDE and OS specific files
+__pycache__/
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,8 @@
+pandas
+requests
+geopandas
+folium
+streamlit
+plotly
+python-dotenv
+openpyxl

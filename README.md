@@ -1,6 +1,16 @@
 # Geospatial Analysis of Healthcare Accessibility in Georgia
 
-I'm facing some issues with the streamlit dashboards, as of now I'm attaching the screenshots 
+I'm facing some issues with the streamlit dashboards, as of now I'm attaching the screenshots:
+
+# Geospatial Analysis of Georgia:
+
+![Screenshot 2025-07-07 142154](https://github.com/user-attachments/assets/437ea086-ac9b-4e69-a38d-44fd73cd70eb)
+
+# The dashboards which define the analytics for Georgia State:
+
+![Screenshot 2025-07-07 142348](https://github.com/user-attachments/assets/c7ea7158-42fb-4a0e-aa99-0a03e9ab3514)
+
+![image](https://github.com/user-attachments/assets/6832014c-a199-4381-9550-a8fa29ba2c92)
 
 ---
 

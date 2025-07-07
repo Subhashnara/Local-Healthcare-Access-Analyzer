@@ -1,9 +1,6 @@
 # Geospatial Analysis of Healthcare Accessibility in Georgia
 
-> **Note:** You can take a screenshot of your final dashboard and replace the link above to display an image.
-
-**Live Application Link:** [Interactive Healthcare Dashboard](#)  
-(Once you deploy your Streamlit app, you can add the link here.)
+I'm facing some issues with the streamlit dashboards, as of now I'm attaching the screenshots 
 
 ---
 

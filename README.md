@@ -74,12 +74,58 @@ The project is executed through a series of numbered Python scripts located in t
 
 ---
 
+
 ## Local Setup and Execution
 
 To run this project on your local machine, follow these steps:
 
-### 1. Clone the Repository
+### 1. Cloning my repository
 
-```bash
 git clone https://github.com/your-username/healthcare-access-analyzer-ga.git
 cd healthcare-access-analyzer-ga
+
+### 2. Set Up a Virtual Environment (Recommended)
+
+python -m venv venv
+source venv/bin/activate
+
+### 3. Install Dependencies
+
+pip install -r requirements.txt
+
+### 4. Set Up Environment Variables
+
+- Get a free API key from the U.S. Census Bureau.
+
+- Rename the .env.example file to .env.
+
+- Add your API key to the .env file in this variable:
+
+        CENSUS_API_KEY="YOUR_CENSUS_API_KEY_HERE"
+
+### 5. Download Required Data
+
+- Download the Health Center Service Delivery Sites CSV and save it in the project root as "Health_Center_Service_Delivery_and_LookAlike_Sites.csv".
+
+- Download the Rural-urban Continuum Codes Excel file and save it in the project root as Ruralurbancontinuumcodes2023.csv.
+
+- Download the TIGER/Line Shapefile for US Counties and extract it into a folder named tl_2022_us_county in the project root.
+
+### 6. Run the Data Pipeline
+Execute the scripts in order from the root directory:
+
+python scripts/01_fetch_census_data.py
+python scripts/02_merge_facilities_with_population.py
+# ... and so on for all scripts
+
+### 7. Launch the Dashboard
+
+Run this command in your directory where the file is: streamlit run dashboard/app.py
+Your browser should open to http://localhost:8501 with the interactive dashboard.
+
+## Key Insights
+- Significant disparities exist in healthcare access between Georgia's metropolitan and nonmetropolitan counties.
+
+- Several nonmetropolitan counties were identified with zero registered health centers, despite having thousands of residents, making them critical healthcare deserts.
+
+- Counties in the Atlanta metropolitan area show the highest concentration of facilities, but some still exhibit a low facilities-per-capita ratio due to their large populations.

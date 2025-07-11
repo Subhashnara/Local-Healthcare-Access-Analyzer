@@ -66,11 +66,11 @@ Access to healthcare is not uniform. How can we identify which communities in Ge
 
 The project is executed through a series of numbered Python scripts located in the `scripts/` directory:
 
-1. `01_fetch_census_data.py`: Fetches county-level population data for Georgia from the U.S. Census Bureau API.  
-2. `02_merge_facilities_with_population.py`: Merges the HRSA health center locations with the census population data.  
-3. `03_analyze_county_access.py`: Calculates the key metric "Facilities per 10,000 People" for each county.  
-4. `04_add_rural_urban_codes.py`: Enriches the dataset by adding USDA Rural-Urban Continuum Codes.  
-5. `05_generate_access_map.py`: Generates the interactive `georgia_healthcare_access_map.html` file.  
+1. `data_from_census.py`: Fetches county-level population data for Georgia from the U.S. Census Bureau API.  
+2. `merge_facilities_with_population.py`: Merges the HRSA health center locations with the census population data.  
+3. `analyze_county_access.py`: Calculates the key metric "Facilities per 10,000 People" for each county.  
+4. `add_rural_urban_codes.py`: Enriches the dataset by adding USDA Rural-Urban Continuum Codes.  
+5. `generate_access_map.py`: Generates the interactive `georgia_healthcare_access_map.html` file.  
 
 ---
 
